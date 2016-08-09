@@ -1,50 +1,33 @@
-##Mongo Pokemon Lab
+# Mongo Pokemon Lab
 
-Time for some Pokemon query fun in the MongoDB console... 
+Time for some Pokemon query fun in the MongoDB console...
 
 * First, grab the `seed.json` file from your repo.
 * Next, import it into MongoDB using the `mongoimport` feature. Make sure you're in the directory that includes the file before running this command in the terminal:
 
-`mongoimport -d test -c pokemons --jsonArray < seed.json`
+`mongoimport -d pokemon -c pokemons --jsonArray < seed.json`
 
 
 <br>
 
-##Helpful Mongo Commands
-#####To start mongod
-`brew services`
-#####To start the MongoDB Shell
- `mongo`
- 
-#####To list your databases
+## Helpful Mongo Commands
 
-`show dbs`
-
-#####To choose a database
-
-`use <database_name>`
-
-#####To verify your current database
-
-`db`
-
-#####To show the collections in that database
-`show collections`
-
-#####To query the particular collection in that database
-
-`db.<collection_name>.find()`
-
-#####To make a JSON Object 'pretty'
-
-`.pretty()`
+| Command                       | Description                                |
+|:----------------------------- |:------------------------------------------ |
+| `brew services`               | Start or Stop MongoDBserver                |
+| `mongo`                       | Start a MongoDB Shell (client)             |
+| `show dbs`                    | Show a list of Databases                   |
+| `use <database_name>`         | Set your current database                  |
+| `db`                          | Verify your current database               |
+| `show collections`            | Show the collections in the current DB     |
+| `db.<collection_name>.find()` | Query a particular collection              |
+| `.pretty()`                   | Make a JSON Object 'pretty'                |
 
 Also, be sure to check the [MongoDB docs](https://www.mongodb.org).
 
-
 <br>
 
-##Pokemon Queries
+## Pokemon Queries
 
 __STEP 1__ - Print all the Pokemon names to the MongoDB console like so `name: <name_of_pokemon>`.
 <br>
@@ -71,15 +54,7 @@ __STEP 8__ - Create a new collection named `Schmittymons` and add a new `Schmitt
 
 * **name**: Schmitty
 * **img**: http://40.media.tumblr.com/tumblr_m78kl3JexC1rag2cto1_500.jpg
-* **tutor**: 
+* **tutor**:
 	* **name**: grass pledge
 	* **gen**: V
 * **happiness**: 99
-
-
-
-
-
-
-
- 
